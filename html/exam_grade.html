@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Grades</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="card text-bg-secondary text-center m-3" id="inputCard">
+            <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">Input Examination Grades</h5><br>
+                <div class="d-flex flex-column align-items-center w-75">
+                    <div class="mb-2 w-100 text-start">
+                        Prelim:</br> 
+                        <input type="text" id="prelim"><br><br>
+                        Midterm:</br>
+                        <input type="text" id="midterm"><br><br>
+                        Semi Final:</br>
+                        <input type="text" id="semi_final"><br><br>
+                        Final:</br>
+                        <input type="text" id="final"><br><br>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+            </div>
+        </div>
+        <div class="card text-bg-danger text-center m-3" id="errorCard" hidden>
+            <div class="card-body d-flex flex-column align-items-center" id="errorCardBody">TEST</div>
+        </div>
+        <div class="card border-primary text-center m-3" id="outputCard" hidden>
+            <div class="card-body d-flex flex-column align-items-center" id="outputCardBody">TEST</div>
+            <button class="btn btn-primary" id="resetBtn">OK</button>
+        </div>
+    </div>
+    
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/my_scripts/exam_grade.js"></script>
+</body>
+</html>
