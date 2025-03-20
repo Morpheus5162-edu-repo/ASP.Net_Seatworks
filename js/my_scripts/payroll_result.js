@@ -31,7 +31,11 @@ $(document).ready(function () {
         <tr><th>Basic Pay</th><td>${formatPrice(payrollData.basicPay)}</td></tr>
         <tr><th>Overtime Pay</th><td>${formatPrice(payrollData.overtimePay)}</td></tr>
         <tr><th>Gross Earnings</th><td>${formatPrice(payrollData.grossEarnings)}</td></tr>
+<<<<<<< HEAD
         <tr><th>Withholding Tax</th><td>${formatPrice(payrollData.taxDeduction)}</td></tr>
+=======
+        <tr><th>W/Tax</th><td>${formatPrice(payrollData.taxDeduction)}</td></tr>
+>>>>>>> refs/remotes/origin/master
         <tr><th>SSS Deduction</th><td>${formatPrice(payrollData.sssDeduction)}</td></tr>
         <tr><th>PhilHealth Deduction</th><td>${formatPrice(payrollData.philHealthDeduction)}</td></tr>
         <tr><th>Pag-Ibig Deduction</th><td>${formatPrice(payrollData.pagIbigDeduction)}</td></tr>

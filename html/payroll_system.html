@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
+<<<<<<< HEAD
     <div class="container d-flex flex-column justify-content-center align-items-center">
         <br><h2>Payroll System</h2><br>
         <form id="payrollForm">
@@ -23,6 +24,24 @@
             <input type="text" id="middleInitial" maxlength="1"><br>
 
             <label for="civilStatus">Civil Status: </label>
+=======
+    <div class="container">
+        <h2>Payroll System</h2>
+        <form id="payrollForm">
+            <label for="empID">Employee ID:</label>
+            <input type="text" id="empID" required><br>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" required><br>
+
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" required><br>
+
+            <label for="middleInitial">Middle Initial:</label>
+            <input type="text" id="middleInitial" maxlength="1"><br>
+
+            <label for="civilStatus">Civil Status:</label>
+>>>>>>> refs/remotes/origin/master
             <select id="civilStatus">
                 <option value="S">Single</option>
                 <option value="M">Married</option>
@@ -30,7 +49,11 @@
                 <option value="O">Other</option>
             </select><br>
 
+<<<<<<< HEAD
             <label for="employmentStatus">Employment Status: </label>
+=======
+            <label for="employmentStatus">Employment Status:</label>
+>>>>>>> refs/remotes/origin/master
             <select id="employmentStatus">
                 <option value="R">Regular</option>
                 <option value="P">Probationary</option>
@@ -38,7 +61,11 @@
                 <option value="PT">Part Timer</option>
             </select><br>
 
+<<<<<<< HEAD
             <label for="hoursWorked">Total Hours Worked: </label>
+=======
+            <label for="hoursWorked">Total Hours Worked:</label>
+>>>>>>> refs/remotes/origin/master
             <input type="number" id="hoursWorked" required><br>
 
             <button type="submit" class="btn btn-primary">Calculate Payroll</button>
