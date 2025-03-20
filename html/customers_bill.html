@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Customer Bill</h2>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <br><h2>Customer Bill</h2><br>
         <form id="billForm">
             <label>How many TV's were sold? <input type="number" id="tv" min="0" value="0"></label><br>
             <label>How many VCR's were sold? <input type="number" id="vcr" min="0" value="0"></label><br>
             <label>How many Remote Controllers were sold? <input type="number" id="remote" min="0" value="0"></label><br>
             <label>How many CD Players were sold? <input type="number" id="cd" min="0" value="0"></label><br>
             <label>How many Tape Recorders were sold? <input type="number" id="tape" min="0" value="0"></label><br><br>
-            <button type="button" id="calculate">Generate Bill</button>
+            <button class="btn btn-primary" id="calculate">Generate Bill</button>
         </form><br>
     </div>
 
-    <div class="container">
+    <div class="container d-flex flex-column justify-content-center ali">
         <table class="table table-dark table-bordered text-center" id="billTable" hidden>
             <thead>
                 <tr class="table-active">
