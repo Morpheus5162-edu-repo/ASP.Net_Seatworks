@@ -22,10 +22,14 @@ $(document).ready(function(){
         let subtotal = 0;
         let tableRows = "";
         
+        // The loop iterates through each 
+        // product in the products array
         for (let i = 0; i < products.length; i++) {
             let product = products[i];
             let productTotalPrice = product.qty * product.price;
 
+            // If the user purchased at least one unit, 
+            // a new row is added to tableRows using template literals (`)
             if (product.qty > 0) {
                 tableRows += `<tr>
                     <td>${product.qty}</td>
@@ -34,9 +38,12 @@ $(document).ready(function(){
                     <td>${formatPrice(productTotalPrice)}</td>
                 </tr>`;
             }
+            // Adds the total cost of the 
+            // current product to subtotal
             subtotal += productTotalPrice;
         }
 
+        // Calculate tax and total amount
         let tax = subtotal * TAX_PERCENTAGE;
         let totalAmount = subtotal + tax;
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll System</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Payroll System</h2>
+        <form id="payrollForm">
+            <label for="empID">Employee ID:</label>
+            <input type="text" id="empID" required><br>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" required><br>
+
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" required><br>
+
+            <label for="middleInitial">Middle Initial:</label>
+            <input type="text" id="middleInitial" maxlength="1"><br>
+
+            <label for="civilStatus">Civil Status:</label>
+            <select id="civilStatus">
+                <option value="S">Single</option>
+                <option value="M">Married</option>
+                <option value="W">Widow</option>
+                <option value="O">Other</option>
+            </select><br>
+
+            <label for="employmentStatus">Employment Status:</label>
+            <select id="employmentStatus">
+                <option value="R">Regular</option>
+                <option value="P">Probationary</option>
+                <option value="C">Casual</option>
+                <option value="PT">Part Timer</option>
+            </select><br>
+
+            <label for="hoursWorked">Total Hours Worked:</label>
+            <input type="number" id="hoursWorked" required><br>
+
+            <button type="submit" class="btn btn-primary">Calculate Payroll</button>
+        </form>
+    </div>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/my_scripts/payroll_system.js"></script>
+</body>
+</html>
